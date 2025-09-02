@@ -1,11 +1,11 @@
 🍕 Pizza Sales Analytics Dashboard
-📌 Short Description / Purpose
+📌 Short Description
 
 An end-to-end data analytics project built with SQL + Power BI, designed to analyze pizza sales performance across multiple dimensions. SQL was used for data extraction, cleaning, and advanced queries, while Power BI was used for interactive dashboarding and business insights.
 
 🛠️ Tech Stack
 
-🗄️ SQL (PostgreSQL / MySQL / SQL Server) – Data cleaning, transformations, and analysis queries
+🗄️ SQL (MSSQL servers) – Data cleaning, transformations, and analysis queries
 
 📊 Power BI Desktop – Data visualization & dashboard creation
 
@@ -110,6 +110,6 @@ Track order trends & revenue growth
 
 ✅ Enabled data-driven decisions for pricing & promotions
 
-🖼️ Screenshots / Demo
+🖼️ Screenshots
 
-(Insert dashboard screenshots here — SQL outputs + Power BI visuals side by side will look amazing in README)
+https://github.com/Imranshariff42/Pizza-Sales-Report/blob/main/Home%20page.png
