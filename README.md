@@ -152,3 +152,5 @@ Track order trends & revenue growth
 🖼️ **Screenshots**
 
 https://github.com/Imranshariff42/Pizza-Sales-Report/blob/main/Home%20page.png
+
+https://github.com/Imranshariff42/Pizza-Sales-Report/blob/main/Second%20Page.png
