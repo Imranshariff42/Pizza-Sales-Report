@@ -1,23 +1,34 @@
-🍕 **Pizza Sales Analytics Dashboard**
+🍕 Pizza Sales Analytics Dashboard
+📌 Short Description / Purpose
 
-📌 **Short Description**
 An end-to-end data analytics project built with SQL + Power BI, designed to analyze pizza sales performance across multiple dimensions. SQL was used for data extraction, cleaning, and advanced queries, while Power BI was used for interactive dashboarding and business insights.
 
-🛠️ **Tech Stack** 
+🛠️ Tech Stack
+
 🗄️ SQL (PostgreSQL / MySQL / SQL Server) – Data cleaning, transformations, and analysis queries
+
 📊 Power BI Desktop – Data visualization & dashboard creation
+
 📂 Power Query – ETL layer for shaping and cleaning data
+
 🧠 DAX (Data Analysis Expressions) – KPIs, advanced calculations
+
 📝 Data Modeling – Star schema (Orders, Customers, Pizzas, Categories)
 
-📂 **Data Source**
+📂 Data Source
+
 Dataset: Pizza Sales Dataset (CSV format → Imported into SQL DB)
+
 Order-level data with fields like:
+
 Order ID, Date, Time
+
 Pizza Name, Category, Size
+
 Quantity, Price, Revenue
 
-🔑 **SQL Queries Used**
+🔑 SQL Queries Used
+
 Before moving to Power BI, SQL was used for data preparation + analysis.
 Some example queries include:
 
@@ -62,28 +73,43 @@ GROUP BY order_hour
 ORDER BY total_orders DESC;
 
 
-🌟 **Dashboard Features**
+(More complex queries like monthly trends, category-level revenue, and average order values can be added in the repo under SQL Queries folder.)
+
+🌟 Dashboard Features
 🔹 Business Problem
+
 Raw sales data lacked structure for insights — making it difficult to identify best-selling pizzas, peak hours, and underperforming categories.
 
-🔹 **Goal of the Dashboard**
+🔹 Goal of the Dashboard
+
 Provide real-time visibility into sales metrics
+
 Support menu optimization & promotional strategies
+
 Track order trends & revenue growth
 
-🔹 **Walkthrough of Key Visuals** 
+🔹 Walkthrough of Key Visuals (in Power BI)
+
 📌 KPIs: Revenue, Orders, Avg Order Value, Best Seller
+
 📊 Category & Size Analysis (Donut + Stacked Chart)
+
 📈 Sales Trends (Daily & Monthly)
+
 🕒 Peak Hours of Orders (Line Chart)
+
 🥇 Top 5 / Bottom 5 Pizzas (Bar Chart)
 
-💡 **Business Impact & Insights**
+💡 Business Impact & Insights
+
 ✅ Identified best-selling pizzas to double down marketing
+
 ✅ Found underperforming pizzas → candidate for removal/re-pricing
+
 ✅ Optimized staff allocation based on peak demand hours
+
 ✅ Enabled data-driven decisions for pricing & promotions
 
-🖼️ **Screenshots**
+🖼️ Screenshots / Demo
 
 (Insert dashboard screenshots here — SQL outputs + Power BI visuals side by side will look amazing in README)
