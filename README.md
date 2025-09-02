@@ -1,9 +1,10 @@
-🍕 Pizza Sales Analytics Dashboard
-📌 Short Description
+🍕 **Pizza Sales Analytics Dashboard**
+
+📌 **Short Description**
 
 An end-to-end data analytics project built with SQL + Power BI, designed to analyze pizza sales performance across multiple dimensions. SQL was used for data extraction, cleaning, and advanced queries, while Power BI was used for interactive dashboarding and business insights.
 
-🛠️ Tech Stack
+🛠️ **Tech Stack**
 
 🗄️ SQL (MSSQL servers) – Data cleaning, transformations, and analysis queries
 
@@ -15,7 +16,9 @@ An end-to-end data analytics project built with SQL + Power BI, designed to anal
 
 📝 Data Modeling – Star schema (Orders, Customers, Pizzas, Categories)
 
-📂 Data Source
+
+
+📂 **Data Source**
 
 Dataset: Pizza Sales Dataset (CSV format → Imported into SQL DB)
 
@@ -27,55 +30,90 @@ Pizza Name, Category, Size
 
 Quantity, Price, Revenue
 
-🔑 SQL Queries Used
+
+
+🔑 **SQL Queries Used**
 
 Before moving to Power BI, SQL was used for data preparation + analysis.
 Some example queries include:
 
 1. Total Revenue & Orders
-SELECT 
-    SUM(quantity * price) AS total_revenue, 
-    COUNT(DISTINCT order_id) AS total_orders 
+ 
+SELECT SUM(quantity * price) AS total_revenue,
+    COUNT(DISTINCT order_id) AS total_orders
+   
 FROM pizza_sales;
 
-2. Top 5 Best-Selling Pizzas (by Revenue)
+
+
+
+3. Top 5 Best-Selling Pizzas (by Revenue)
+   
 SELECT 
     pizza_name, 
     ROUND(SUM(quantity * price), 2) AS revenue
+    
 FROM pizza_sales
+
 GROUP BY pizza_name
+
 ORDER BY revenue DESC
+
 LIMIT 5;
 
-3. Bottom 5 Worst-Selling Pizzas (by Revenue)
-SELECT 
+
+
+
+5. Bottom 5 Worst-Selling Pizzas (by Revenue)
+SELECT
+
     pizza_name, 
     ROUND(SUM(quantity * price), 2) AS revenue
+   
 FROM pizza_sales
+
 GROUP BY pizza_name
+
 ORDER BY revenue ASC
+
 LIMIT 5;
 
-4. Sales by Pizza Size
-SELECT 
-    pizza_size, 
+
+
+
+7. Sales by Pizza Size
+SELECT
+
+    pizza_size,
     ROUND(SUM(quantity * price), 2) AS revenue
+   
 FROM pizza_sales
+
 GROUP BY pizza_size
+
 ORDER BY revenue DESC;
 
-5. Peak Ordering Hours
+
+
+
+9. Peak Ordering Hours
 SELECT 
     EXTRACT(HOUR FROM order_time) AS order_hour, 
     COUNT(order_id) AS total_orders
+   
 FROM pizza_sales
+
 GROUP BY order_hour
+
 ORDER BY total_orders DESC;
 
 
-(More complex queries like monthly trends, category-level revenue, and average order values can be added in the repo under SQL Queries folder.)
 
-🌟 Dashboard Features
+
+
+
+🌟 **Dashboard Features**
+
 🔹 Business Problem
 
 Raw sales data lacked structure for insights — making it difficult to identify best-selling pizzas, peak hours, and underperforming categories.
@@ -100,7 +138,8 @@ Track order trends & revenue growth
 
 🥇 Top 5 / Bottom 5 Pizzas (Bar Chart)
 
-💡 Business Impact & Insights
+
+💡 **Business Impact & Insights**
 
 ✅ Identified best-selling pizzas to double down marketing
 
@@ -110,6 +149,6 @@ Track order trends & revenue growth
 
 ✅ Enabled data-driven decisions for pricing & promotions
 
-🖼️ Screenshots
+🖼️ **Screenshots**
 
 https://github.com/Imranshariff42/Pizza-Sales-Report/blob/main/Home%20page.png
