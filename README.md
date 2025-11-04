@@ -6,15 +6,15 @@ An end-to-end data analytics project built with SQL + Power BI, designed to anal
 
 🛠️ **Tech Stack**
 
-🗄️ SQL (MSSQL servers) – Data cleaning, transformations, and analysis queries
+SQL (MSSQL servers) – Data cleaning, transformations, and analysis queries
 
-📊 Power BI Desktop – Data visualization & dashboard creation
+Power BI Desktop – Data visualization & dashboard creation
 
-📂 Power Query – ETL layer for shaping and cleaning data
+Power Query – ETL layer for shaping and cleaning data
 
-🧠 DAX (Data Analysis Expressions) – KPIs, advanced calculations
+DAX (Data Analysis Expressions) – KPIs, advanced calculations
 
-📝 Data Modeling – Star schema (Orders, Customers, Pizzas, Categories)
+Data Modeling – Star schema (Orders, Customers, Pizzas, Categories)
 
 
 
@@ -29,88 +29,6 @@ Order ID, Date, Time
 Pizza Name, Category, Size
 
 Quantity, Price, Revenue
-
-
-
-🔑 **SQL Queries Used**
-
-Before moving to Power BI, SQL was used for data preparation + analysis.
-Some example queries include:
-
-1. Total Revenue & Orders
- 
-SELECT SUM(quantity * price) AS total_revenue,
-    COUNT(DISTINCT order_id) AS total_orders
-   
-FROM pizza_sales;
-
-
-
-
-3. Top 5 Best-Selling Pizzas (by Revenue)
-   
-SELECT 
-    pizza_name, 
-    ROUND(SUM(quantity * price), 2) AS revenue
-    
-FROM pizza_sales
-
-GROUP BY pizza_name
-
-ORDER BY revenue DESC
-
-LIMIT 5;
-
-
-
-
-5. Bottom 5 Worst-Selling Pizzas (by Revenue)
-SELECT
-
-    pizza_name, 
-    ROUND(SUM(quantity * price), 2) AS revenue
-   
-FROM pizza_sales
-
-GROUP BY pizza_name
-
-ORDER BY revenue ASC
-
-LIMIT 5;
-
-
-
-
-7. Sales by Pizza Size
-SELECT
-
-    pizza_size,
-    ROUND(SUM(quantity * price), 2) AS revenue
-   
-FROM pizza_sales
-
-GROUP BY pizza_size
-
-ORDER BY revenue DESC;
-
-
-
-
-9. Peak Ordering Hours
-SELECT 
-    EXTRACT(HOUR FROM order_time) AS order_hour, 
-    COUNT(order_id) AS total_orders
-   
-FROM pizza_sales
-
-GROUP BY order_hour
-
-ORDER BY total_orders DESC;
-
-
-
-
-
 
 🌟 **Dashboard Features**
 
@@ -128,15 +46,15 @@ Track order trends & revenue growth
 
 🔹 Walkthrough of Key Visuals (in Power BI)
 
-📌 KPIs: Revenue, Orders, Avg Order Value, Best Seller
+KPIs: Revenue, Orders, Avg Order Value, Best Seller
 
-📊 Category & Size Analysis (Donut + Stacked Chart)
+Category & Size Analysis (Donut + Stacked Chart)
 
-📈 Sales Trends (Daily & Monthly)
+Sales Trends (Daily & Monthly)
 
-🕒 Peak Hours of Orders (Line Chart)
+Peak Hours of Orders (Line Chart)
 
-🥇 Top 5 / Bottom 5 Pizzas (Bar Chart)
+Top 5 / Bottom 5 Pizzas (Bar Chart)
 
 
 💡 **Business Impact & Insights**
@@ -148,6 +66,8 @@ Track order trends & revenue growth
 ✅ Optimized staff allocation based on peak demand hours
 
 ✅ Enabled data-driven decisions for pricing & promotions
+
+**Live Dashboard link:** https://app.powerbi.com/view?r=eyJrIjoiZTU0NDM0MmMtM2Q0MS00NTVkLTk0ZTktNGE1ZDYzY2I0NThkIiwidCI6ImQ0NjZlNTA5LWQ4YWMtNGZmZC1iMTAxLWViN2QzYmQ1MzlhYSJ9
 
 🖼️ **Screenshots**
 
