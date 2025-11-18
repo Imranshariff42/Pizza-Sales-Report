@@ -1,10 +1,10 @@
-🍕 **Pizza Sales Analytics Dashboard**
+🍕 **Pizza Sales Report**
 
-📌 **Short Description**
+**Short Description**
 
 An end-to-end data analytics project built with SQL + Power BI, designed to analyze pizza sales performance across multiple dimensions. SQL was used for data extraction, cleaning, and advanced queries, while Power BI was used for interactive dashboarding and business insights.
 
-🛠️ **Tech Stack**
+**Tech Stack**
 
 SQL (MSSQL servers) – Data cleaning, transformations, and analysis queries
 
@@ -18,7 +18,7 @@ Data Modeling – Star schema (Orders, Customers, Pizzas, Categories)
 
 
 
-📂 **Data Source**
+**Data Source**
 
 Dataset: Pizza Sales Dataset (CSV format → Imported into SQL DB)
 
@@ -30,7 +30,7 @@ Pizza Name, Category, Size
 
 Quantity, Price, Revenue
 
-🌟 **Dashboard Features**
+**Dashboard Features**
 
 🔹 Business Problem
 
@@ -57,7 +57,7 @@ Peak Hours of Orders (Line Chart)
 Top 5 / Bottom 5 Pizzas (Bar Chart)
 
 
-💡 **Business Impact & Insights**
+**Business Impact & Insights**
 
 ✅ Identified best-selling pizzas to double down marketing
 
